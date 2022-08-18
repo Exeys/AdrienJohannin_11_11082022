@@ -1,0 +1,32 @@
+.HomeContent {
+    height: 100%;
+    width: 100%;
+}
+
+.Banner {
+    margin-top: 70px;
+    background-image: url(../../assets/banner.png);
+    background-repeat: no-repeat;
+    width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+.BannerText {
+    width: 100%;
+    font-family: "Montserrat";
+    font-size: 36px;
+    line-height: 142.6%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.Thumbs {
+    margin-top:20px;
+    background: #f7f7f7;
+    border-radius: 25px;
+    width: 1240px;
+    height: 829px;
+}

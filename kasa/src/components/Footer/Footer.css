@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../../fonts/Montserrat-Regular.otf);
+}
+
+.Footer {
+    background-color: black;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    padding: 40px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+}
+
+.Footer p {
+    padding-top:10px;
+    color: white;
+    font-size:14px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
