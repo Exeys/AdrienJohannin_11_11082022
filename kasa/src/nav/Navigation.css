@@ -1,46 +1,44 @@
 @font-face {
-    font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Regular.otf");
-  }
-  
-  .Container {
-    max-width: 1340px;
-    margin: auto;
-  }
-  
-  .Navigation {
-    padding-top:40px;
-    display: flex;
-    justify-content: space-between;
-    margin-right:100px;
-    box-sizing: border-box;
-  }
-  
-  .NavigationLogo {
-    margin-left:100px;
-  }
-  
-  .NavigationList {
-    list-style: none;
-    text-decoration: none;
-  }
-  
-  .NavigationListItem {
-    color: #ff6060;
-    display: inline-block;
-    background-color: transparent;
-    font-size: 18px;
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 14px 20px;
-  }
-  
-  .NavigationListItem a {
-    text-decoration: none;
-    font-family: "Montserrat";
-  }
-  
-  .NavigationListItem a:visited {
-    color: inherit;
-  }
-  
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.otf");
+}
+
+.Container {
+  max-width: 1340px;
+  margin: auto;
+}
+
+.Navigation {
+  margin: auto;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.NavigationList {
+  list-style: none;
+  text-decoration: none;
+}
+
+.NavigationListItem {
+  color: #ff6060;
+  display: inline-block;
+  background-color: transparent;
+  font-size: 18px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 14px 20px;
+}
+
+.NavigationListItem a {
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+.NavigationListItem a:visited {
+  color: inherit;
+}
+.NavigationListItem a:hover {
+  text-decoration: underline;
+}

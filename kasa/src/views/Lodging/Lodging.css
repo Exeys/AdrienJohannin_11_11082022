@@ -1,0 +1,26 @@
+.LodgingContent{
+    padding-bottom:200px;
+}
+
+.LodgingTitle, .LodgingLocation, .LodgingAgent{
+    color:#FF6060;
+    font-family: Montserrat;
+}
+
+.LodgingDetails{
+}
+
+.LodgingTitle{
+    font-size:22px;
+}
+
+.LodgingTags{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin: auto;
+    width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    margin-top: 20px;
+}

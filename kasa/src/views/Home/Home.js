@@ -5,13 +5,16 @@ import './Home.css'
 const Home = () =>{
     return (
         <div className='HomeContent'>
-            <div className='Banner'>
-                <div className='BannerText'>Chez vous, partout et ailleurs</div>
+            <div className='HomeBanner'>
+                <div className='HomeBannerText'>Chez vous, partout et ailleurs</div>
             </div>
             <div className='Thumbs'>
-                <Thumb text='Nothing'/>
-                <Thumb text='Nothing'/>
-                <Thumb text='Nothing'/>
+                <Thumb text="Titre de la location"/>
+                <Thumb text="Titre de la location"/>
+                <Thumb text="Titre de la location"/>
+                <Thumb text="Titre de la location"/>
+                <Thumb text="Titre de la location"/>
+                <Thumb text="Titre de la location"/>
             </div>
             
         </div>

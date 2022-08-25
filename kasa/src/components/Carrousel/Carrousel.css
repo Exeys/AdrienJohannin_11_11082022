@@ -1,0 +1,12 @@
+.CarrouselContainer{
+    background-image: url(../../assets/Background.png);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: darken;
+    background-repeat: no-repeat;
+    margin:auto;
+    width: 1240px;
+    height:415px;
+    border-radius: 25px;
+}
