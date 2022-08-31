@@ -2,6 +2,7 @@
 import Carrousel from '../../components/Carrousel/Carrousel.js'
 import Tag from '../../components/Tag/Tag.js'
 import Dropdown from '../../components/Dropdown/Dropdown'
+import Rating from '../../components/Rating/Rating.js'
 
 import './Lodging.css'
 
@@ -15,6 +16,7 @@ const Lodging = () => {
                 <div className='LodgingAgent'>Alexandre Dumas</div>
                 <div className='LodgingLocation'>Paris, Île-de-France</div>
             </div>
+            <Rating value="2"/>
             <div className="LodgingTags">
                 <Tag text="Cozy" />
                 <Tag text="Canal" />
