@@ -23,24 +23,39 @@ const Lodging = () => {
                     <div className='LodgingLocation'>
                         <p>Paris, Île-de-France</p>
                     </div>
+                    <div className="LodgingTags">
+                        <Tag text="Cozy" />
+                        <Tag text="Canal" />
+                        <Tag text="Paris 10" />
+                    </div>
                 </div>
                 <div className='LodgingDetailsRightside'>
                     <div className='LodgingAgent'>
                         <p>Alexandre Dumas</p>
                         <span className='AgentImage'></span>
                     </div>
+                    <div className='LodgingRating'>
+                        <Rating type="full" value="3" />
+                        <Rating type="empty" value="2" />
+                    </div>
                 </div>
             </div>
-            <Rating type="full" value="1" />
-            <Rating type="empty" value="5" />{/*
-            <div className="LodgingTags">
-                <Tag text="Cozy" />
-                <Tag text="Canal" />
-                <Tag text="Paris 10" />
+            <div className='LodgingDropdowns'>
+                <Dropdown title="Description" type="small">
+                    <p>Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied). </p>
+                </Dropdown>
+                <Dropdown title="Équipements" type="small">
+                    <p>
+                        Climatisation
+                        Wi-Fi
+                        Cuisine
+                        Espace de travail
+                        Fer à repasser
+                        Sèche-cheveux
+                        Cintres
+                    </p>
+                </Dropdown>
             </div>
-            
-            <Dropdown title="Description" />
-            <Dropdown title="Équipements" />*/}
         </div>
     )
 }

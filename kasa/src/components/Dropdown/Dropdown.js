@@ -3,6 +3,12 @@ import { useState } from 'react'
 
 export default function Dropdown(props) {
 
+    const type = props.type;
+
+    let className = 'DropdownContainer';
+    if (type === 'small'){
+        className += ' small'
+    }
 
     const [showContent, setShowContent] = useState(false)
     const [switchIcons, updateIcons] = useState(false)
@@ -12,7 +18,7 @@ export default function Dropdown(props) {
     }
 
     return (
-        <div className='DropdownContainer' >
+        <div className={className}>
             <p className='DropdownTitle'>{props.title}</p>
             <i className='DropdownIcon' onClick={handleClick}>
                 {

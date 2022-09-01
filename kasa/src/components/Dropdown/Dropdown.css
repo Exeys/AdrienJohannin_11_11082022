@@ -23,3 +23,7 @@
     padding: 18px 18px 18px 18px;
     border-radius: 0 0 5px 5px;
 }
+
+.small{
+    max-width: 580px;;
+}
