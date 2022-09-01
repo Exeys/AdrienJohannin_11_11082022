@@ -10,7 +10,7 @@ import './Lodging.css'
 const Lodging = () => {
     return (
         <div className='LodgingContent'>
-            <Carrousel>
+            <Carrousel type="">
                 <img src={test} alt="placeholder" />
                 <img src="https://via.placeholder.com/1240x415" alt="placeholder" />
                 <img src="https://via.placeholder.com/1240x415" alt="placeholder" />
@@ -35,8 +35,7 @@ const Lodging = () => {
                         <span className='AgentImage'></span>
                     </div>
                     <div className='LodgingRating'>
-                        <Rating type="full" value="3" />
-                        <Rating type="empty" value="2" />
+                        <Rating value="4" />
                     </div>
                 </div>
             </div>
