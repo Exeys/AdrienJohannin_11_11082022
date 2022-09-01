@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './views/Home/Home.js';
 import About from './views/About/About.js';
 import Lodging from './views/Lodging/Lodging.js'
+import PageNotFound from './views/PageNotFound/PageNotFound.js';
 import Navigation from './nav/Navigation';
 import Footer from './components/Footer/Footer.js';
 
@@ -22,6 +23,7 @@ const App = () => {
                     </Route>
                     <Route path="/lodging" element={<Lodging/>}>
                     </Route>
+                    <Route path="*" element={<PageNotFound/>}/>
                 </Routes>
                 <Footer/>
             </Router >
