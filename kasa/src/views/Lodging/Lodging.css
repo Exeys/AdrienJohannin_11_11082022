@@ -1,23 +1,55 @@
-.LodgingContent{
-    padding-bottom:200px;
+.LodgingContent {
+    padding-bottom: 200px;
+    margin: auto;
 }
 
-.LodgingTitle, .LodgingLocation, .LodgingAgent{
-    color:#FF6060;
+.LodgingTitle,
+.LodgingLocation,
+.LodgingAgent {
+    color: #ff6060;
     font-family: Montserrat;
 }
 
-.LodgingDetails{
+.LodgingDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
 }
 
-.LodgingTitle{
-    font-size:22px;
+.LodgingTitle p {
+    font-size: 28px;
+    margin: 0;
 }
 
-.LodgingTags{
+.LodgingLocation p {
+    margin-top: 5px;
+}
+
+.LodgingAgent {
+    display: inline-flex;
+    align-items: center;
+}
+.LodgingAgent p {
+    line-height: 1.5em;
+    height: 3em;
+    max-width: 100px;;
+    padding-right:20px;
+    text-align: right;
+    margin:0;
+}
+
+.AgentImage {
+    height: 64px;
+    width: 64px;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.LodgingTags {
     display: flex;
     align-items: center;
-    gap:10px;
+    gap: 10px;
     margin: auto;
     width: 1240px;
     height: 223px;
