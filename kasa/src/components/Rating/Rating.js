@@ -1,6 +1,6 @@
 import './Rating.css'
-import FullRating from '../../assets/fullstar.png'
-import EmptyRating from '../../assets/emptystar.png'
+import Full from '../../assets/fullstar.png'
+import Empty from '../../assets/emptystar.png'
 
 function Rating({ type, value }) {
 
