@@ -1,12 +1,13 @@
 import './Thumb.css'
 
-const Thumb = ({text}) => {
-    return(
+const Thumb = ({ text, url, cover }) => {
+    return (
         <div className='ThumbContainer'>
-        <p className='ThumbTitle'>{text}</p>
-    </div>
+            <img className='ThumbCover' src={cover} alt="cover"/>
+            <a href="../lodging:{url}" className='ThumbTitle'>{text}</a>
+        </div>
     )
-    
+
 }
 
 export default Thumb
