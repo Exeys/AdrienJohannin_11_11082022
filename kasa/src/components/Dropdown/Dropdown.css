@@ -1,11 +1,16 @@
 .DropdownContainer {
-    width: 1023px;
+    width: 100%;
     background-color: #ff6060;
     border-radius: 5px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.DropdownHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .DropdownTitle {
@@ -23,7 +28,7 @@
     padding: 18px 18px 18px 18px;
     border-radius: 0 0 5px 5px;
 }
-
-.small{
-    max-width: 580px;;
+.DropdownContent li{
+    list-style-type: none;
 }
+

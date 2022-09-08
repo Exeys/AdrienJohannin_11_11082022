@@ -1,65 +1,73 @@
-
 import Carrousel from '../../components/Carrousel/Carrousel.js'
 import Tag from '../../components/Tag/Tag.js'
 import Dropdown from '../../components/Dropdown/Dropdown'
 import Rating from '../../components/Rating/Rating.js'
-import test from '../../assets/Background.png'
+import data from '../../data/logements.json'
+import PageNotFound from '../PageNotFound/PageNotFound'
 import './Lodging.css'
+import { useParams } from 'react-router-dom'
+
 
 
 const Lodging = () => {
-    return (
+
+    const { id } = useParams();
+    const apartment = data.find((apartment) => apartment.id === id)
+
+    return apartment ? (
         <div className='LodgingContent'>
-            <Carrousel type="">
-                <img src={test} alt="placeholder" />
-                <img src="https://via.placeholder.com/1240x415" alt="placeholder" />
-                <img src="https://via.placeholder.com/1240x415" alt="placeholder" />
+            <Carrousel>
+                {apartment.pictures}
             </Carrousel>
             <div className='LodgingDetails'>
                 <div className='LodgingDetailsLeftside'>
                     <div className='LodgingTitle'>
-                        <p>Cozy loft on the Canal Saint-Martin</p>
+                        <p>{apartment.title}</p>
                     </div>
                     <div className='LodgingLocation'>
-                        <p>Paris, Île-de-France</p>
+                        <p>{apartment.location}</p>
                     </div>
                     <div className="LodgingTags">
-                        <Tag text="Cozy" />
-                        <Tag text="Canal" />
-                        <Tag text="Paris 10" />
+                        {apartment.tags.map((tag, i) => {
+                            return (
+                                <Tag text={tag} />
+                            )
+                        })}
                     </div>
                 </div>
                 <div className='LodgingDetailsRightside'>
                     <div className='LodgingAgent'>
-                        <p>Alexandre Dumas</p>
-                        <span className='AgentImage'></span>
+                        <p>{apartment.host.name}</p>
+                        <span className='AgentImage'>
+                            <img src={apartment.host.picture} alt="host" />
+                        </span>
                     </div>
                     <div className='LodgingRating'>
-                        <Rating value="4" />
+                        <Rating value={apartment.rating} />
                     </div>
                 </div>
             </div>
             <div className='LodgingDropdowns'>
                 <div className='Drop'>
                     <Dropdown title="Description" type="small">
-                        <p>Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied). </p>
+                        <p>{apartment.description}</p>
                     </Dropdown>
                 </div>
                 <div className='Drop'>
                     <Dropdown title="Équipements" type="small">
-                        <p>
-                            Climatisation
-                            Wi-Fi
-                            Cuisine
-                            Espace de travail
-                            Fer à repasser
-                            Sèche-cheveux
-                            Cintres
-                        </p>
+                        <ul>
+                            {apartment.equipments.map((equipment) => {
+                                return(
+                                     <li>{equipment}</li>
+                                )
+                            })}
+                        </ul>
                     </Dropdown>
                 </div>
             </div>
         </div>
+    ) : (
+        <PageNotFound />
     )
 }
 

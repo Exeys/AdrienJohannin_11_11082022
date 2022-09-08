@@ -3,13 +3,13 @@
     align-items: center;
     justify-content: center;
     background-image: url(../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png);
-    mix-blend-mode: darken;
     background-repeat: no-repeat;
     margin: auto;
     width: 1240px;
     height: 223px;
     border-radius: 25px;
     margin-top:20px;
+    filter: brightness(0.75);
 }
 
 .Dropdowns {

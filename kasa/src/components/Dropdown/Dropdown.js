@@ -19,11 +19,16 @@ export default function Dropdown(props) {
 
     return (
         <div className={className}>
-            <p className='DropdownTitle'>{props.title}</p>
-            <img src={showContent ? chevronhaut : chevronbas}
-                className='DropdownIcon'
-                onClick={handleClick}
-                alt="icon" />
+            <div className='DropdownHeader'>
+                <p className='DropdownTitle'>
+                    {props.title}
+                </p>
+                <img src={showContent ? chevronhaut : chevronbas}
+                    className='DropdownIcon'
+                    onClick={handleClick}
+                    alt="icon" />
+            </div>
+
 
             {
                 showContent && (

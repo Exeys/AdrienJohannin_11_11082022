@@ -12,10 +12,13 @@ const Home = () => {
             <div className='Thumbs'>
                 {data.map((apartment, i) => {
                     return (
-                        <Thumb text={apartment.title} url={apartment.id} cover={apartment.cover} />
+                        <Thumb
+                            text={apartment.title}
+                            url={apartment.id}
+                            cover={apartment.cover}
+                            key={i} />
                     )
                 })}
-
             </div>
 
         </div>

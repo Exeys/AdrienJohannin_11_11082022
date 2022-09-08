@@ -1,6 +1,6 @@
 .LodgingContent {
     padding-bottom: 200px;
-    margin: auto;
+    margin: 0 10%;
 }
 
 .LodgingTitle,
@@ -50,6 +50,13 @@
     display: inline-block;
 }
 
+.AgentImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .LodgingTags {
     display: flex;
     align-items: center;
@@ -63,6 +70,7 @@
 .LodgingRating {
     display: flex;
     flex-direction: row;
+    margin-top:24px;
 }
 
 .LodgingDropdowns {
@@ -70,4 +78,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+
+.Drop{
+    width: 45%;
 }

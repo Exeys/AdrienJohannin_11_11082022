@@ -41,3 +41,22 @@
 .NavigationListItem a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 1420px){
+  .NavigationListItem{
+    padding:0;
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  .Navigation{
+    padding:20px;
+    text-transform: uppercase;
+    
+  }
+  .NavigationList{
+    display: flex;
+    align-items: center;
+    gap:10px;
+  }
+
+}
