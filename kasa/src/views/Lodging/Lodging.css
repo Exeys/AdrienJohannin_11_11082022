@@ -111,4 +111,7 @@
     .LodgingAgent p {
         font-size:12px;
     }
+    .LodgingContent{
+        margin: 0 5%;
+    }
 }
