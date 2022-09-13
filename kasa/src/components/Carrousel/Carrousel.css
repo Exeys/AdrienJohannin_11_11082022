@@ -41,5 +41,18 @@
 }
 /* ... */
 
-.small {
+
+@media screen and (max-width: 1480px) {
+    .CarrouselContainer{
+        height: unset;
+    }
+    .CarrouselContent{
+        height: 255px;
+    }
+    .left-arrow,.right-arrow{
+        width: 11px;;
+    }
+    .CarrouselNb{
+        display: none;
+    }
 }

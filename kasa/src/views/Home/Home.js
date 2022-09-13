@@ -7,7 +7,9 @@ const Home = () => {
     return (
         <div className='HomeContent'>
             <div className='HomeBanner'>
-                <div className='HomeBannerText'>Chez vous, partout et ailleurs</div>
+                <div className='HomeBannerText'>
+                    <p>Chez vous, partout et ailleurs</p>
+                    </div>
             </div>
             <div className='Thumbs'>
                 {data.map((apartment, i) => {

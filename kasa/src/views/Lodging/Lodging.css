@@ -84,3 +84,31 @@
 .Drop{
     width: 45%;
 }
+
+@media screen and (max-width: 1480px) {
+    .LodgingDetails{
+        display: unset;
+    }
+    .LodgingDropdowns{
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+    }
+    .LodgingDetailsRightside{
+        flex-direction: row-reverse;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Drop{
+        width: 100%;
+    }
+    .LodgingTitle{
+        font-size:18px;
+    }
+    .LodgingLocation{
+        font-size:14px;
+    }
+    .LodgingAgent p {
+        font-size:12px;
+    }
+}

@@ -5,7 +5,7 @@
     background-image: url(../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png);
     background-repeat: no-repeat;
     margin: auto;
-    width: 1240px;
+    width: 75%;
     height: 223px;
     border-radius: 25px;
     margin-top:20px;
@@ -23,4 +23,15 @@
 }
 .AboutContent{
     flex:1;
+}
+
+
+@media screen and (max-width: 1480px) {
+    .AboutBanner{
+        margin-top:unset;
+        width:90%;
+    }
+    .Dropdowns{
+        width: 90%;
+    }
 }
