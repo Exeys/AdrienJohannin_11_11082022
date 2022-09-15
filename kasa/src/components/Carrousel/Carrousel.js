@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import LeftArrow from '../../assets/arrowleft.svg'
 import RightArrow from '../../assets/arrowright.svg'
+import Proptypes from 'prop-types'
 
 const Carrousel = (props) => {
 
@@ -45,6 +46,10 @@ const Carrousel = (props) => {
 
         </div>
     )
+}
+
+Carrousel.propTypes = {
+    children: Proptypes.array
 }
 
 export default Carrousel

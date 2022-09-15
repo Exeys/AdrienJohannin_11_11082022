@@ -2,6 +2,7 @@ import './Dropdown.css'
 import { useState } from 'react'
 import chevronhaut from '../../assets/chevronhaut.svg'
 import chevronbas from '../../assets/chevronbas.svg'
+import Proptypes, { string } from 'prop-types'
 
 export default function Dropdown(props) {
 
@@ -39,4 +40,8 @@ export default function Dropdown(props) {
             }
         </div>
     )
+}
+
+Dropdown.propTypes = {
+    children: Proptypes.object
 }

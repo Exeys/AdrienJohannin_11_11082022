@@ -1,4 +1,5 @@
 import './Tag.css'
+import Proptypes from 'prop-types'
 
 const Tag = ({text}) => {
     return(
@@ -7,6 +8,10 @@ const Tag = ({text}) => {
     </div>
     )
     
+}
+
+Tag.propTypes = {
+    text: Proptypes.string
 }
 
 export default Tag;

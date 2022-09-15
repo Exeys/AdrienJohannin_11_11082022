@@ -1,22 +1,28 @@
 
 import { Link } from "react-router-dom";
-import Lodging from "../../views/Lodging/Lodging";
 import './Thumb.css'
+import Proptypes from 'prop-types'
 
-const Thumb = ({ text, url, cover, index }) => {
+const Thumb = (props) => {
     return (
         <div className='ThumbContainer'>
-            <img className='ThumbCover' src={cover} alt="cover" />
+            <img className='ThumbCover' src={props.cover} alt="cover" />
             <Link
-                to={`lodging/${url}`}
-                component={Lodging}
-                key={index}
+                to={`lodging/${props.url}`}
+                key={props.index}
                 className='ThumbTitle'>
-                {text}
+                {props.text}
             </Link>
         </div>
     )
 
+}
+
+Thumb.propTypes = {
+    cover: Proptypes.string,
+    url: Proptypes.string,
+    index: Proptypes.number,
+    text: Proptypes.string
 }
 
 export default Thumb

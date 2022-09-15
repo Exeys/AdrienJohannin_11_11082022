@@ -30,7 +30,7 @@ const Lodging = () => {
                     <div className="LodgingTags">
                         {apartment.tags.map((tag, i) => {
                             return (
-                                <Tag text={tag} />
+                                <Tag text={tag} key={i}/>
                             )
                         })}
                     </div>
@@ -43,7 +43,7 @@ const Lodging = () => {
                         </span>
                     </div>
                     <div className='LodgingRating'>
-                        <Rating value={apartment.rating} />
+                        <Rating value={+apartment.rating}/>
                     </div>
                 </div>
             </div>
@@ -56,9 +56,9 @@ const Lodging = () => {
                 <div className='Drop'>
                     <Dropdown title="Équipements" type="small">
                         <ul>
-                            {apartment.equipments.map((equipment) => {
+                            {apartment.equipments.map((equipment, i) => {
                                 return(
-                                     <li>{equipment}</li>
+                                     <li key={i}>{equipment}</li>
                                 )
                             })}
                         </ul>
